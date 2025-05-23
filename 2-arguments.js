@@ -1,10 +1,9 @@
-const arguments = process.argv;
-const numArguments = arguments.length - 2; // Exclude node and script path
+const args = process.argv.slice(2);
 
-if (numArguments === 0) {
-  console.log('No arguments');
-} else if (numArguments === 1) {
-  console.log('Argument found');
+if (args.length === 0) {
+  console.log("No argument");
+} else if (args.length === 1) {
+  console.log("Arguments found");
 } else {
-  console.log('Arguments found');
-}
+  console.log("Arguments found");
+} 
